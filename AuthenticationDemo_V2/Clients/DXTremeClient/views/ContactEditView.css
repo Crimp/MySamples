@@ -1,0 +1,10 @@
+﻿#showButton, #hideButton {
+  margin-top: 25px;
+}
+#overlay
+{
+  border: solid 1px #444;
+  background: lightsteelblue;
+  padding: 10px;
+  text-align: center; 
+}

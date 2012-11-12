@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>DXTremeClient</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Framework -->
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="js/globalize.js"></script>
+
+    <script type="text/javascript" src="js/dxtreme.core-12.2.0.js"></script>
+    <script type="text/javascript" src="js/dxtreme.framework-12.2.0.js"></script>
+    <script type="text/javascript" src="js/dxtreme.widgets-12.2.0.js"></script>
+    <script type="text/javascript" src="js/dxtreme.viz-12.2.0.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/dxtreme-12.2.0.css" />
+
+    <link rel="stylesheet" type="text/css" href="App.css" />
+    <script type="text/javascript" src="App.js"></script>
+    <script type="text/javascript" src="data\db.js"></script>
+    <script type="text/javascript" src="data\DataManipulationRight.js"></script>
+    <!-- Layouts -->
+    <link rel="stylesheet" type="text/css" href="layouts/Navbar/NavbarLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Navbar/NavbarLayout.html" />
+    <script type="text/javascript" src="layouts/Navbar/NavbarLayout.js"></script>
+
+    <!-- Views -->
+    <script type="text/javascript" src="views/LisView.js"></script>
+    <link rel="dx-template" type="text/html" href="views/LisView.html" />
+    <link rel="stylesheet" type="text/css" href="views/LisView.css" />
+
+    <script type="text/javascript" src="views/DetailView.js"></script>
+    <link rel="dx-template" type="text/html" href="views/DetailView.html" />
+
+    <script type="text/javascript" src="views/ContactEditView.js"></script>
+    <link rel="dx-template" type="text/html" href="views/ContactEditView.html" />
+    <link rel="stylesheet" type="text/css" href="views/ContactEditView.css" />
+
+    <script type="text/javascript" src="views/LogOn.js"></script>
+    <link rel="dx-template" type="text/html" href="views/LogOn.html" />
+    <link rel="stylesheet" type="text/css" href="views/LogOn.css" />
+
+
+    <link rel="dx-template" type="text/html" href="views/About.html" />
+
+    <script>
+        $(function () {
+            app.navigate("LogOn/null");
+            //app.navigate();
+        });
+    </script>
+</head>
+<body>
+    <div id="viewPort"></div>
+</body>
+</html>
+

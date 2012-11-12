@@ -1,0 +1,135 @@
+﻿/* Layout */
+
+*[data-target-placeholder] {
+	height: 100%;
+    -position: absolute;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.layout-header {
+    position: absolute;
+    width: 100%;
+}
+
+.layout-content {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.layout-footer {
+    width: 100%;
+    position: absolute;
+}
+
+/* ios */
+
+.dx-theme-ios .layout-header {
+    top: 0;
+    height: 44px;
+}
+
+.dx-theme-ios .layout-content {
+    top: 44px;
+    bottom: 53px;
+}
+
+.dx-theme-ios .layout-footer {
+    bottom: 0;
+    height: 53px;
+}
+
+/* android */
+
+.dx-theme-android .layout-header {
+    top: 0;
+    height: 60px;
+}
+
+.dx-theme-android .layout-content {
+    top: 60px;
+    bottom: 40px;
+}
+
+.dx-theme-android .layout-footer {
+    bottom: 0;
+    height: 40px;
+}
+
+/* win8phone */
+
+.dx-theme-win8phone .layout-header {
+    top: 0;
+    height: 65px;
+}
+
+.dx-theme-win8phone .layout-content {
+    top: 65px;
+    bottom: 52px;
+}
+
+.dx-theme-win8phone .layout-footer {
+    bottom: 0;
+    height: 52px;
+}
+
+/* desktop */
+.dx-theme-desktop {
+    background: #ccc;
+}
+.dx-theme-desktop .fixed-width {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.dx-theme-desktop .logo {
+    float: left;
+    margin: 25px;
+    background: white;
+}
+.dx-theme-desktop h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+.dx-theme-desktop .layout-header {
+    top: 0;
+    position: relative;
+    overflow: auto;
+
+    background: #303030;
+    text-align: left;
+    border-top: 1px solid rgba(0,0,0,.1);
+    -webkit-box-shadow: inset 0 1px rgba(255,255,255,.2);
+    -moz-box-shadow: inset 0 1px rgba(255,255,255,.2);
+    box-shadow: inset 0 1px rgba(255,255,255,.2);
+}
+
+.dx-theme-desktop .dx-tabs {
+    border: none;
+    background: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    display: block;
+}
+
+.dx-theme-desktop .layout-content-wrapper {
+    background: #fff;
+}
+    
+.dx-theme-desktop .layout-content {
+    position: relative;
+    overflow: auto;
+    padding: 10px;
+    min-height: 400px;
+}
+
+.dx-theme-desktop .layout-footer {
+    position: relative;
+    overflow: auto;
+}

@@ -1,0 +1,31 @@
+﻿<div data-role="view" data-name="ContactEditView">
+    <div data-target-placeholder="header">
+        <div data-bind="dxToolbar: {}">
+            <div data-bind="dxToolbarItem: { align: 'left', type: 'button' }">
+                <div data-bind="dxButton: { type: 'back', text: 'Back', click: handleBackClick }"></div>
+            </div>
+            <div data-bind="dxToolbarItem: { align: 'right', type: 'button' }">
+                <div data-bind="dxButton: { text: 'Save', click: handleSaveClick }"></div>
+            </div>
+            <div data-bind="dxToolbarItem: { align: 'center', text: FirstName }"></div>
+        </div>
+    </div>
+    <div data-target-placeholder="content">
+        <div class="dx-field">
+            <div class="dx-field-key">FirstName</div>
+            <div class="dx-field-value" data-bind="dxTextbox: { value: FirstName }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-key">LastName</div>
+            <div class="dx-field-value" data-bind="dxTextbox: { value: LastName }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-key">Email</div>
+            <div class="dx-field-value" data-bind="dxTextbox: { value: Email }"></div>
+        </div>
+        <div id="overlay" data-bind="dxOverlay: { }">
+            <div data-bind="text: ErrorMessage"></div>
+            <div id="hideButton" data-bind="dxButton: { text: 'Close', click: hideOverlay }"></div>
+        </div>
+    </div>
+</div>

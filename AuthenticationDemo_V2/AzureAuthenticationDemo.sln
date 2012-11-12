@@ -1,0 +1,222 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{2ED64445-EE46-4C99-83FB-018E2AD1FB17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9B6D4D4B-A768-4E66-8719-DAA9E2A9223B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{859EA628-CA8D-46A0-B221-7702994C45EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XafWinClient", "XafWinClient", "{5330FADD-D0BF-4817-AEB4-7511E54FFD5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjectsLibrary", "Clients\XafWinClient\BusinessObjectsLibrary\BusinessObjectsLibrary.csproj", "{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XafWinClient.Module", "Clients\XafWinClient\XafWinClient.Module\XafWinClient.Module.csproj", "{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XafWinClient.Module.Win", "Clients\XafWinClient\XafWinClient.Module.Win\XafWinClient.Module.Win.csproj", "{072362F2-3199-46B2-AAC9-1BA30F125BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XafWinClient.Win", "Clients\XafWinClient\XafWinClient.Win\XafWinClient.Win.csproj", "{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureConsoleClient", "Clients\AzureConsoleClient\AzureConsoleClient.csproj", "{A2DD2FE9-A884-4822-918F-84BF3944AB9A}"
+EndProject
+Project("{1B19158F-E398-40A6-8E3B-350508E125F1}") = "DXTremeClient", "Clients\DXTremeClient\DXTremeClient.dxjsproj", "{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAuthenticationService", "Services\CustomAuthenticationService\CustomAuthenticationService.csproj", "{344BE512-C331-459E-8357-48D417AC5E96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataDemoServiceBase", "Services\ODataDemoServiceBase\ODataDemoServiceBase.csproj", "{77CB535A-F77A-4F9E-8562-99B976684DB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBCreator", "Utils\DBCreator\DBCreator.csproj", "{4F16647F-76AD-46B3-90ED-F04AAA70A271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHelper", "Utils\ConsoleHelper\ConsoleHelper.csproj", "{9E920203-6BD3-43D8-9C43-17F71CF01E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientServer_Wcf_CustomAuth.Service", "Services\ClientServer_Wcf_CustomAuth.Service\ClientServer_Wcf_CustomAuth.Service.csproj", "{B063F2E7-CFFC-4C99-A179-381B37489DE0}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "CustomAuthenticationService.Azure", "CustomAuthenticationService.Azure\CustomAuthenticationService.Azure.ccproj", "{05FE049E-AB33-4424-A87F-17D20768FB5F}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "ClientServer_Wcf_CustomAuth.Service.Azure", "ClientServer_Wcf_CustomAuth.Service.Azure\ClientServer_Wcf_CustomAuth.Service.Azure.ccproj", "{593D1D74-7112-4FA1-A113-17DCD9C921EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AzureDebug|Any CPU = AzureDebug|Any CPU
+		AzureDebug|x86 = AzureDebug|x86
+		AzureRelease|Any CPU = AzureRelease|Any CPU
+		AzureRelease|x86 = AzureRelease|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.AzureDebug|Any CPU.ActiveCfg = AzureDebug|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.AzureDebug|Any CPU.Build.0 = AzureDebug|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.AzureDebug|x86.ActiveCfg = AzureDebug|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.AzureRelease|Any CPU.ActiveCfg = AzureRelease|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.AzureRelease|Any CPU.Build.0 = AzureRelease|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.AzureRelease|x86.ActiveCfg = AzureRelease|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.Release|x86.ActiveCfg = Release|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.AzureDebug|Any CPU.ActiveCfg = AzureDebug|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.AzureDebug|Any CPU.Build.0 = AzureDebug|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.AzureDebug|x86.ActiveCfg = AzureDebug|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.AzureRelease|Any CPU.ActiveCfg = AzureRelease|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.AzureRelease|Any CPU.Build.0 = AzureRelease|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.AzureRelease|x86.ActiveCfg = AzureRelease|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825}.Release|x86.ActiveCfg = Release|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.AzureDebug|Any CPU.ActiveCfg = AzureDebug|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.AzureDebug|Any CPU.Build.0 = AzureDebug|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.AzureDebug|x86.ActiveCfg = AzureDebug|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.AzureRelease|Any CPU.ActiveCfg = AzureRelease|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.AzureRelease|Any CPU.Build.0 = AzureRelease|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.AzureRelease|x86.ActiveCfg = AzureRelease|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6}.Release|x86.ActiveCfg = Release|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.AzureDebug|Any CPU.ActiveCfg = AzureDebug|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.AzureDebug|Any CPU.Build.0 = AzureDebug|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.AzureDebug|x86.ActiveCfg = AzureDebug|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.AzureRelease|Any CPU.ActiveCfg = AzureRelease|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.AzureRelease|Any CPU.Build.0 = AzureRelease|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.AzureRelease|x86.ActiveCfg = AzureRelease|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7}.Release|x86.ActiveCfg = Release|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.AzureDebug|Any CPU.ActiveCfg = AzureDebug|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.AzureDebug|Any CPU.Build.0 = AzureDebug|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.AzureDebug|x86.ActiveCfg = AzureDebug|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.AzureRelease|Any CPU.ActiveCfg = AzureRelease|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.AzureRelease|Any CPU.Build.0 = AzureRelease|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.AzureRelease|x86.ActiveCfg = AzureRelease|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A}.Release|x86.ActiveCfg = Release|Any CPU
+		{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE}.AzureDebug|Any CPU.ActiveCfg = AzureDebug|x86
+		{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE}.AzureDebug|x86.ActiveCfg = AzureDebug|x86
+		{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE}.AzureRelease|Any CPU.ActiveCfg = AzureRelease|x86
+		{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE}.AzureRelease|x86.ActiveCfg = AzureRelease|x86
+		{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE}.Debug|x86.ActiveCfg = Debug|x86
+		{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE}.Debug|x86.Build.0 = Debug|x86
+		{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE}.Release|Any CPU.ActiveCfg = Release|x86
+		{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE}.Release|x86.ActiveCfg = Release|x86
+		{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE}.Release|x86.Build.0 = Release|x86
+		{344BE512-C331-459E-8357-48D417AC5E96}.AzureDebug|Any CPU.ActiveCfg = AzureDebug|Any CPU
+		{344BE512-C331-459E-8357-48D417AC5E96}.AzureDebug|Any CPU.Build.0 = AzureDebug|Any CPU
+		{344BE512-C331-459E-8357-48D417AC5E96}.AzureDebug|x86.ActiveCfg = AzureDebug|Any CPU
+		{344BE512-C331-459E-8357-48D417AC5E96}.AzureRelease|Any CPU.ActiveCfg = AzureRelease|Any CPU
+		{344BE512-C331-459E-8357-48D417AC5E96}.AzureRelease|Any CPU.Build.0 = AzureRelease|Any CPU
+		{344BE512-C331-459E-8357-48D417AC5E96}.AzureRelease|x86.ActiveCfg = AzureRelease|Any CPU
+		{344BE512-C331-459E-8357-48D417AC5E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{344BE512-C331-459E-8357-48D417AC5E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{344BE512-C331-459E-8357-48D417AC5E96}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{344BE512-C331-459E-8357-48D417AC5E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{344BE512-C331-459E-8357-48D417AC5E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{344BE512-C331-459E-8357-48D417AC5E96}.Release|x86.ActiveCfg = Release|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.AzureDebug|Any CPU.ActiveCfg = AzureDebug|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.AzureDebug|Any CPU.Build.0 = AzureDebug|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.AzureDebug|x86.ActiveCfg = AzureDebug|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.AzureRelease|Any CPU.ActiveCfg = AzureRelease|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.AzureRelease|Any CPU.Build.0 = AzureRelease|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.AzureRelease|x86.ActiveCfg = AzureRelease|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.Release|x86.ActiveCfg = Release|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.AzureDebug|Any CPU.ActiveCfg = AzureDebug|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.AzureDebug|Any CPU.Build.0 = AzureDebug|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.AzureDebug|x86.ActiveCfg = AzureDebug|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.AzureRelease|Any CPU.ActiveCfg = AzureRelease|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.AzureRelease|Any CPU.Build.0 = AzureRelease|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.AzureRelease|x86.ActiveCfg = AzureRelease|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.Release|x86.ActiveCfg = Release|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.AzureDebug|Any CPU.ActiveCfg = AzureDebug|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.AzureDebug|Any CPU.Build.0 = AzureDebug|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.AzureDebug|x86.ActiveCfg = AzureDebug|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.AzureRelease|Any CPU.ActiveCfg = AzureRelease|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.AzureRelease|Any CPU.Build.0 = AzureRelease|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.AzureRelease|x86.ActiveCfg = AzureRelease|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B}.Release|x86.ActiveCfg = Release|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.AzureDebug|Any CPU.ActiveCfg = AzureDebug|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.AzureDebug|Any CPU.Build.0 = AzureDebug|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.AzureDebug|x86.ActiveCfg = AzureDebug|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.AzureRelease|Any CPU.ActiveCfg = AzureRelease|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.AzureRelease|Any CPU.Build.0 = AzureRelease|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.AzureRelease|x86.ActiveCfg = AzureRelease|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0}.Release|x86.ActiveCfg = Release|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.AzureDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.AzureDebug|Any CPU.Build.0 = Debug|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.AzureDebug|x86.ActiveCfg = Debug|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.AzureRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.AzureRelease|Any CPU.Build.0 = Release|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.AzureRelease|x86.ActiveCfg = Release|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05FE049E-AB33-4424-A87F-17D20768FB5F}.Release|x86.ActiveCfg = Release|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.AzureDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.AzureDebug|Any CPU.Build.0 = Debug|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.AzureDebug|x86.ActiveCfg = Debug|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.AzureRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.AzureRelease|Any CPU.Build.0 = Release|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.AzureRelease|x86.ActiveCfg = Release|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593D1D74-7112-4FA1-A113-17DCD9C921EF}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5330FADD-D0BF-4817-AEB4-7511E54FFD5B} = {2ED64445-EE46-4C99-83FB-018E2AD1FB17}
+		{A2DD2FE9-A884-4822-918F-84BF3944AB9A} = {2ED64445-EE46-4C99-83FB-018E2AD1FB17}
+		{61F3EC2C-3F18-4827-9FCF-EB6D64822EAE} = {2ED64445-EE46-4C99-83FB-018E2AD1FB17}
+		{344BE512-C331-459E-8357-48D417AC5E96} = {9B6D4D4B-A768-4E66-8719-DAA9E2A9223B}
+		{77CB535A-F77A-4F9E-8562-99B976684DB7} = {9B6D4D4B-A768-4E66-8719-DAA9E2A9223B}
+		{B063F2E7-CFFC-4C99-A179-381B37489DE0} = {9B6D4D4B-A768-4E66-8719-DAA9E2A9223B}
+		{4F16647F-76AD-46B3-90ED-F04AAA70A271} = {859EA628-CA8D-46A0-B221-7702994C45EA}
+		{9E920203-6BD3-43D8-9C43-17F71CF01E2B} = {859EA628-CA8D-46A0-B221-7702994C45EA}
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23} = {5330FADD-D0BF-4817-AEB4-7511E54FFD5B}
+		{D07C9FB1-D2EC-4ECE-AB64-60B87DB9A825} = {5330FADD-D0BF-4817-AEB4-7511E54FFD5B}
+		{072362F2-3199-46B2-AAC9-1BA30F125BE6} = {5330FADD-D0BF-4817-AEB4-7511E54FFD5B}
+		{5CFACD07-A09F-4179-9D38-F2BC4A22D1B7} = {5330FADD-D0BF-4817-AEB4-7511E54FFD5B}
+	EndGlobalSection
+EndGlobal

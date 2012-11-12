@@ -1,0 +1,54 @@
+﻿<div data-role="layout" data-name="navbar" data-platform="ios" class="page" data-controller="navbar">
+
+    <div class="layout-header" data-placeholder="header" data-transition="fade">
+        <!--<div data-bind="dxToolbar: {}" data-command-container="back" data-left-locations="back">
+            <div data-bind="dxToolbarItem: { text: title, align: 'center' }"></div>
+        </div>-->
+    </div>
+
+    <div class="layout-content" data-placeholder="content" data-transition="slide"></div>
+    
+    <div class="layout-footer" data-placeholder="footer">
+        <div id="navBar" data-bind="dxNavBar: { }" data-command-container="navigation">        
+        </div>
+    </div>
+    
+</div>
+
+<div data-role="layout" data-name="navbar" data-platform="android" class="page" data-controller="navbar">
+
+    <div class="layout-header" data-placeholder="header">
+        <!--<div data-bind="dxToolbar: {}" >
+            <div data-bind="dxToolbarItem: { text: title, align: 'center' }"></div>
+        </div>-->
+    </div>
+
+    <div class="layout-content" data-placeholder="content" data-transition="slide"></div>
+    
+    <div class="layout-footer" data-placeholder="footer">
+        <div id="navBar" data-bind="dxNavBar: { }" data-command-container="navigation">        
+        </div>
+    </div>
+
+</div>
+
+<div data-role="layout" data-name="navbar" data-platform="desktop" class="page" data-controller="navbar">
+
+    <div class="layout-header" data-placeholder="header">
+        <div class="fixed-width">
+            <div id="navBar" data-bind="dxNavBar: { }" data-command-container="navigation"></div>
+        </div>
+    </div>
+    <div class="layout-content-wrapper">
+        <div class="fixed-width">
+            <div class="layout-content" data-placeholder="content" data-transition="none"></div>
+        </div>
+    </div>
+
+    <div class="layout-footer">
+        <div class="fixed-width">
+            <p>Copyright 2012</p>
+        </div>
+    </div>
+    
+</div>

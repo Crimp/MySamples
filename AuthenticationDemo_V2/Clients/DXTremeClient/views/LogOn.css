@@ -1,0 +1,8 @@
+﻿#logonFailedoverlay {
+    border: solid 1px #444;
+    width: auto !important;
+    height: auto !important;
+    background: azure;
+    padding: 20px;
+    text-align: center;
+}

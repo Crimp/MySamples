@@ -1,0 +1,23 @@
+﻿<div data-role="view" data-name="LisView">
+    <div data-target-placeholder="header">
+        <div data-bind="dxToolbar: {}">
+            <div data-bind="dxToolbarItem: { align: 'center', text: 'Contacts' }"></div>
+            <div data-bind="dxToolbarItem: { align: 'left', type: 'button' }">
+                <div data-bind="dxButton: { text: 'Log Off', click: handleLogOffClick }"></div>
+            </div>
+        </div>
+    </div>
+    <div data-target-placeholder="content">
+        <div data-bind="dxList: { dataSource: contacts, itemClick: handleContactListItemClick }">
+            <div data-dx-role="template" data-dx-name="item">
+                <div class="contact-icon">
+                    <img data-bind="attr: { src: ($data.Photo) }" width="60" height="60" />
+                </div>
+                <div class="contact-info">
+                    <div class="contact-FirstName" data-bind="text: $data.FirstName"></div>
+                    <div class="contact-LastName" data-bind="text: $data.LastName"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

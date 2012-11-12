@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>61f3ec2c-3f18-4827-9fcf-eb6d64822eae</ProjectGuid>
+    <AutoAssignPort>False</AutoAssignPort>
+    <RunInSimulator>True</RunInSimulator>
+    <ApplicationPage>App.html</ApplicationPage>
+    <Name>DXTremeClient</Name>
+    <RootNamespace>DXTremeClient</RootNamespace>
+    <DebugSitePortNumber>50786</DebugSitePortNumber>
+    <Accelerometer>True</Accelerometer>
+    <Camera>True</Camera>
+    <Capture>True</Capture>
+    <Compass>True</Compass>
+    <Connection>True</Connection>
+    <Contacts>True</Contacts>
+    <Device>True</Device>
+    <Events>True</Events>
+    <File>True</File>
+    <Geolocation>True</Geolocation>
+    <Media>True</Media>
+    <Notification>True</Notification>
+    <Storage>True</Storage>
+    <BuildApk>True</BuildApk>
+    <KeyApkPassSave>False</KeyApkPassSave>
+    <KeyApkPath>C:\GitHub\testStrongNameKey.p12</KeyApkPath>
+    <KeyApkAlias />
+    <KeyApkPass />
+    <BuildIpa>False</BuildIpa>
+    <KeyIpaPath />
+    <ProvisionProfile />
+    <ApkDexFilePackageName>js.tmpl.gpxnqcqi</ApkDexFilePackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>output\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>output\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'AzureDebug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\AzureDebug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'AzureRelease' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\AzureRelease\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="App.js" />
+    <Content Include="App.html" />
+    <Content Include="App.css" />
+    <Content Include="css\dxtreme-12.2.0.css" />
+    <Content Include="data\DataManipulationRight.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="data\db.js" />
+    <Content Include="images\NoImage.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="layouts\Navbar\NavbarLayout.css" />
+    <Content Include="layouts\Navbar\NavbarLayout.html" />
+    <Content Include="layouts\Navbar\NavbarLayout.js" />
+    <Content Include="js\dxtreme.core-12.2.0.js" />
+    <Content Include="js\dxtreme.framework-12.2.0.js" />
+    <Content Include="js\dxtreme.widgets-12.2.0.js" />
+    <Content Include="js\dxtreme.viz-12.2.0.js" />
+    <Content Include="js\globalize.js" />
+    <Content Include="js\jquery-1.7.2.intellisense.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\knockout-2.1.0.js" />
+    <Content Include="views\ContactEditView.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\ContactEditView.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\ContactEditView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\DetailView.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\DetailView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\LisView.html" />
+    <Content Include="views\LisView.css" />
+    <Content Include="views\LisView.js" />
+    <Content Include="views\About.html" />
+    <Content Include="views\LogOn.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\LogOn.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\LogOn.js">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="data\" />
+    <Folder Include="js\" />
+    <Folder Include="layouts\" />
+    <Folder Include="layouts\Navbar\" />
+    <Folder Include="images" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <Target Name="Build" DependsOnTargets="CopyReferences;CopyFiles">
+  </Target>
+  <Target Name="CopyFiles">
+    <Copy SourceFiles="@(Content)" DestinationFiles="@(Content->'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" />
+  </Target>
+  <Target Name="CopyReferences">
+    <MSBuild Targets="Build" Projects="@(ProjectReference)" Properties="OutputPath=$([System.IO.Path]::GetFullPath('$(OutputPath)'))">
+    </MSBuild>
+  </Target>
+</Project>
