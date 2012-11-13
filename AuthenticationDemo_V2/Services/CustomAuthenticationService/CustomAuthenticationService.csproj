@@ -55,6 +55,10 @@
       <HintPath>..\..\Dll\DevExpress.ExpressApp.v12.2.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v12.2, Version=12.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\DevExpress.ExpressApp.Xpo.v12.2.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Persistent.Base.v12.2">
       <HintPath>..\..\Dll\DevExpress.Persistent.Base.v12.2.dll</HintPath>
       <Private>True</Private>
@@ -102,7 +106,6 @@
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Data.Services.Client" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />
@@ -133,14 +136,17 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ASPRequestValueManager.cs" />
     <Compile Include="CustomAuthenticationDataService.svc.cs">
       <DependentUpon>CustomAuthenticationDataService.svc</DependentUpon>
     </Compile>
     <Compile Include="CustomAuthenticationServiceHelper.cs" />
+    <Compile Include="DataServiceHelper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="JSONPSupportBehavior.cs" />
+    <Compile Include="MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -156,10 +162,6 @@
     <ProjectReference Include="..\..\Clients\XafWinClient\BusinessObjectsLibrary\BusinessObjectsLibrary.csproj">
       <Project>{8ac0d02c-34d4-40b4-bec1-9e8ad12a8c23}</Project>
       <Name>BusinessObjectsLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ODataDemoServiceBase\ODataDemoServiceBase.csproj">
-      <Project>{77cb535a-f77a-4f9e-8562-99b976684db7}</Project>
-      <Name>ODataDemoServiceBase</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

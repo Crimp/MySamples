@@ -63,6 +63,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Dll\DevExpress.ExpressApp.v12.2.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v12.2, Version=12.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\DevExpress.ExpressApp.Xpo.v12.2.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Persistent.Base.v12.2">
       <HintPath>..\..\Dll\DevExpress.Persistent.Base.v12.2.dll</HintPath>
     </Reference>
@@ -83,6 +87,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\Services\CustomAuthenticationService\DataServiceHelper.cs">
+      <Link>DataServiceHelper.cs</Link>
+    </Compile>
     <Compile Include="DBUpdater.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,10 +106,6 @@
     <ProjectReference Include="..\..\Clients\XafWinClient\BusinessObjectsLibrary\BusinessObjectsLibrary.csproj">
       <Project>{8ac0d02c-34d4-40b4-bec1-9e8ad12a8c23}</Project>
       <Name>BusinessObjectsLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Services\ODataDemoServiceBase\ODataDemoServiceBase.csproj">
-      <Project>{77cb535a-f77a-4f9e-8562-99b976684db7}</Project>
-      <Name>ODataDemoServiceBase</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

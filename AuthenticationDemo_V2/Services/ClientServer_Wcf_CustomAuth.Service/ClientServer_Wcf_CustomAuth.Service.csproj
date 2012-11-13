@@ -127,9 +127,17 @@
   <ItemGroup>
     <Content Include="CustomWcfSecuredDataServer.svc" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\CustomAuthenticationService\ASPRequestValueManager.cs">
+      <Link>ASPRequestValueManager.cs</Link>
+    </Compile>
+    <Compile Include="..\CustomAuthenticationService\DataServiceHelper.cs">
+      <Link>DataServiceHelper.cs</Link>
+    </Compile>
     <Compile Include="CustomAuthenticationServiceHelper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -155,10 +163,6 @@
     <ProjectReference Include="..\..\Clients\XafWinClient\BusinessObjectsLibrary\BusinessObjectsLibrary.csproj">
       <Project>{8ac0d02c-34d4-40b4-bec1-9e8ad12a8c23}</Project>
       <Name>BusinessObjectsLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ODataDemoServiceBase\ODataDemoServiceBase.csproj">
-      <Project>{77cb535a-f77a-4f9e-8562-99b976684db7}</Project>
-      <Name>ODataDemoServiceBase</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
