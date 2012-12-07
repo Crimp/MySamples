@@ -9,7 +9,6 @@ DXTremeClient.ContactDetails = function (params) {
         SecurityDataLoaded: ko.observable(false),
         ErrorMessage: ko.observable(),
         CanEdit: ko.observable(true),
-        ObjectType: ko.observable(),
         UILevelSecurity: ko.observable(true),
 
         id: params.id,
@@ -24,7 +23,7 @@ DXTremeClient.ContactDetails = function (params) {
         canEdit: function (callbackHandler) {
             var self = this;
             var callbackHandlers = new Array(callbackHandler, viewModel.securityDataLoaded);
-            DXTremeClient.DataManipulationRight.IsGranted(self.ObjectType(), "", params.id, "Write", callbackHandlers);
+            DXTremeClient.DataManipulationRight.IsGranted(self.contact.ObjectType, "", params.id, "Write", callbackHandlers);
         },
         dbValidationErrorHandle: function (error) {
             if (error.httpStatus == 403) {
@@ -57,11 +56,24 @@ DXTremeClient.ContactDetails = function (params) {
             contactDetails = this;
             DXTremeClient.db.addErrorHandler(contactDetails.dbValidationErrorHandle);
             DXTremeClient.db.Contact.byKey(params.id).done(function (data) {
-                contactDetails.ObjectType(data.__metadata.type);
-                contactDetails.canEdit(contactDetails.CanEdit);
                 contactDetails.contact.fromJS(data);
+                contactDetails.canEdit(contactDetails.CanEdit);
+
+                //CanReadMembers
+                var mambers = new Array("LastName", "Email");
+                var oids = new Array(contactDetails.contact.oid());
+                DXTremeClient.DataManipulationRight.CanReadMembers(contactDetails.contact.ObjectType, mambers, oids, contactDetails.loadData);
             });
-        }
+        },
+        loadData: function (data) {
+            var objectHandle = viewModel.contact.ObjectType + "(" + viewModel.contact.oid() + ")";
+            if (data[(objectHandle + "LastName")] === "False") {
+                viewModel.contact.LastName("Protected Content");
+            }
+            if (data[(objectHandle + "Email")] === "False") {
+                viewModel.contact.Email("Protected Content");
+            }
+        },
     };
     return viewModel;
 };

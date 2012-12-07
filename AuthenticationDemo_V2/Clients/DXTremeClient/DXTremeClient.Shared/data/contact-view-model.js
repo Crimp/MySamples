@@ -1,17 +1,18 @@
 
-(function() {
-    DXTremeClient.ContactViewModel = function(data) {
-            this.oid = ko.observable();
-            this.FirstName = ko.observable();
-            this.LastName = ko.observable();
-            this.Email = ko.observable();
-            this.Photo = ko.observable();
-            if(data)
-                this.fromJS(data);
+(function () {
+    DXTremeClient.ContactViewModel = function (data) {
+        this.ObjectType = "";
+        this.oid = ko.observable();
+        this.FirstName = ko.observable();
+        this.LastName = ko.observable();
+        this.Email = ko.observable();
+        this.Photo = ko.observable();
+        if (data)
+            this.fromJS(data);
     };
 
     $.extend(DXTremeClient.ContactViewModel.prototype, {
-        toJS: function() {
+        toJS: function () {
             return {
                 oid: this.oid(),
                 FirstName: this.FirstName(),
@@ -29,8 +30,9 @@
             };
         },
 
-        fromJS: function(data) {
-            if(data) {
+        fromJS: function (data) {
+            if (data) {
+                this.ObjectType = data.__metadata.type;
                 this.oid(data.oid);
                 this.FirstName(data.FirstName);
                 this.LastName(data.LastName);

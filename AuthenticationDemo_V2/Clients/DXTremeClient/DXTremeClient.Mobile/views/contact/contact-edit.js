@@ -24,7 +24,6 @@ DXTremeClient.ContactEdit = function(params) {
                 self.contact.fromJS(data);
             });
         },
-
         update: function(){
             DXTremeClient.db.Contact.update(params.id, viewModel.contact.toJS_Save()).done(function () {
                 DXTremeClient.app.navigate("ContactDetails/" + params.id);

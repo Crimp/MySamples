@@ -16,8 +16,12 @@ var NewClass = function (variables, constructor, functions) {
     retn.prototype.__construct = constructor;
     return retn;
 }
-var canReadMembersCallBack = function (data) { }
-var mycallback = function (data) { }
+var canReadMembersCallBack = function (data) {
+
+}
+var mycallback = function (data) {
+
+}
 var DataManipulationRight = NewClass({
 }, function (serviceUrl) {
     this.serviceUrl = serviceUrl;
