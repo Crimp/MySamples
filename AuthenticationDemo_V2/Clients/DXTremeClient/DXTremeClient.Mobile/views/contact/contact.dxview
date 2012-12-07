@@ -4,7 +4,8 @@
     <div data-dx-target-placeholder="myheader">
         <div data-bind="dxToolbar: { items: [
                 { align: 'center', text: 'Contacts' },
-                { align: 'right', widget: 'button', options: { title: 'Add', icon: 'plus', click: '#ContactEdit' } }
+                { align: 'right', widget: 'button', options: { title: 'Add', icon: 'plus', click: '#ContactEdit' } },
+                { align: 'left', widget: 'button', options: { text: 'Log Off', click: handleLogOffClick } }
             ] }">
         </div>
     </div>

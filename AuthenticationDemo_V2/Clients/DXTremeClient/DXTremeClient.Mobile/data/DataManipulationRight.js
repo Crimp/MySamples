@@ -38,7 +38,7 @@ var DataManipulationRight = NewClass({
         }
         this.ajaxRequest(null, "IsUserAllowed", callbackHandlerWrapper, "mycallback");
     },
-    "CanReadMembers": function (objectType, membersName, oids, callbackHandler) {
+    "CanReadMembers": function (objectType, membersName, oids, callbackHandler) { //membersName and oids is string[]
         for (var key in oids) {
             oids[key] = objectType + "(" + oids[key] + ")";
         }

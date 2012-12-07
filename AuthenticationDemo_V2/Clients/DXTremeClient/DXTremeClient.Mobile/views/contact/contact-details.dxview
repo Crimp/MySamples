@@ -7,7 +7,7 @@
             items: [
                     { align: 'center', text: 'Contact' },
                     { align: 'right', widget: 'button', options: { text: 'Edit', click: handleEditClick, disabled: !SecurityDataLoaded() || (!CanEdit() && UILevelSecurity()) } },
-                    { align: 'left', widget: 'button', options: { text: 'Back', click: '#_back' } } 
+                    { align: 'left', widget: 'button', options: { text: 'Back', click: '#_back' } }
                 ]
             }">
         </div>
@@ -29,6 +29,10 @@
                 </div>
                 <div class="dx-field" >
                     <img data-bind="attr: { src: contact.Photo }" width="155" height="155" />
+                </div>
+                <div class="dx-field" data-bind="visible: SecurityDataLoaded() && (CanEdit() || !UILevelSecurity())">
+                    <div class="dx-field-key"></div>
+                    <div class="dx-field-value" data-bind="dxButton: { title: 'Delete', icon: 'remove', type: 'danger', click: handleDelete }"></div>
                 </div>
                 <div class="dx-field" data-bind="visible: !CanEdit()">
                     <div class="dx-field-key">UI Level Security</div>
