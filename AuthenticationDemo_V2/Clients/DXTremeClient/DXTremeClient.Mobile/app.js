@@ -11,7 +11,7 @@ $(function() {
 
     DXTremeClient.getImageUrl = function (base64Data) {
         if (!base64Data) {
-            return "images/NoImage.png";
+            return "images/NoImage.jpg";
         }
         return "data:image/jpg;base64," + base64Data;
     };

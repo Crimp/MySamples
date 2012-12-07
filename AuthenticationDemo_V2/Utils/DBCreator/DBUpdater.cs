@@ -61,7 +61,7 @@ namespace DBCreator {
             CreateUserRole();
             objectSpace.CommitChanges();
 
-            AddContact("Mary", "Tellitson", "mary_tellitson@md.com", null, Guid.NewGuid());
+            AddContact("Mary", "Tellitson", "mary_tellitson@md.com", Resource.Mary, Guid.NewGuid());
             AddContact("Advanced User", "Protected", "Protected Object.com", null, Guid.NewGuid());
             AddNewUser("Sam", "Tellitson", "sam_tellitson@md.com", Resource.Sam, "");
             AddNewUser("John", "Nilsen", "john_nilsen@md.com", Resource.John, "");

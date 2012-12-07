@@ -112,6 +112,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Mary.jpg" />
     <EmbeddedResource Include="Resources\Sam.jpg" />
     <EmbeddedResource Include="Resources\John.jpg" />
     <Content Include="Azure_XAF_AuthenticationDemoDB.sql" />

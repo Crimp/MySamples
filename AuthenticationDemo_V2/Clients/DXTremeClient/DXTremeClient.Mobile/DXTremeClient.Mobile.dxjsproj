@@ -33,7 +33,7 @@
     <Content Include="dxtremeclient.config.js">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="images\NoImage.png">
+    <Content Include="images\NoImage.jpg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="layouts\Navbar\NavbarLayout.css" />

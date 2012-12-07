@@ -73,6 +73,16 @@ namespace DBCreator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mary {
+            get {
+                object obj = ResourceManager.GetObject("Mary", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sam {
             get {
                 object obj = ResourceManager.GetObject("Sam", resourceCulture);
