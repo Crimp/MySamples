@@ -3,14 +3,6 @@
   <Role name="CustomAuthenticationService">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="minakov" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEG+ZMV5Gu9qHQA4cSo2+2yAwDQYJKoZIhvcNAQEBBQAEggEASSdiJdLvnzz5dTHrgEGwIOK9ZnKg7NA5kZxRzS7atXHTSHlYHgsLSL0p2HnC0VlKf3X1/sDG0GXURJpNf2VDVIPxPrMAkGdVkumZnH5ChxqbrnxRwsM29WWWtlJSP59PtJWb32witmILhpe40qYgP5GrKykn6av5DuPDoKszZLJDv70AAubYXjEhLiHpp6tLwExdq5sDQQQ3QU8tT9MbUZatung18vvy1zX5MlQlnTV5qiAuqcs+zuTKwhzsgE4a5K3JJAp7yMWtSizipXrlEqrvo6WxdJoJ7KHZZrUAArdij5cN//5MrwTbJDday5MX5WvDqub0QBxQ75zht8ga9jAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECMqy9+4coqpOgBCrSPhlMw/qtgyVHBbf10dG" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-11-05T23:59:59.0000000+04:00" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
     </ConfigurationSettings>
-    <Certificates>
-      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="72F9E1CC9ED55D2FAB83F26CFA202446A0458008" thumbprintAlgorithm="sha1" />
-    </Certificates>
   </Role>
 </ServiceConfiguration>

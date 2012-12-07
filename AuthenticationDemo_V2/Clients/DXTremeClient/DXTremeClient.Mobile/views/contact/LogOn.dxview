@@ -1,0 +1,26 @@
+<div data-dx-role="view" data-dx-name="LogOn" data-dx-title="LogOn">
+    <div data-dx-target-placeholder="myheader">
+        <div data-bind="dxToolbar: { items: [ { align: 'center', text: 'Log On' } ] }">
+        </div>
+    </div>
+    <div data-dx-target-placeholder="content">
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-key">UserName</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { value: UserName, valueUpdateEvent: 'keyup' }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-key">Password</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { mode: 'password', value: Password }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-key"></div>
+                <div class="dx-field-value" data-bind="dxButton: { text: 'Log On', disabled: !UserName(), click: handleLogOnClick }"></div>
+            </div>
+            <div id="logonFailedoverlay" data-bind="dxOverlay: { }">
+                <div style="color:red" data-bind="text: 'Logon failed'"></div>
+                <div id="hideButton" data-bind="dxButton: { text: 'ok', click: hideOverlay }"></div>
+            </div>
+        </div>
+    </div>
+</div>

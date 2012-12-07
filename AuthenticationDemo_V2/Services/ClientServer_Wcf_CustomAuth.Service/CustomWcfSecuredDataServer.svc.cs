@@ -1,13 +1,6 @@
 ﻿using DevExpress.ExpressApp.Security.ClientServer;
 using DevExpress.ExpressApp.Security.ClientServer.Wcf;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
 using System.ServiceModel.Activation;
-using System.ServiceModel.Web;
-using System.Text;
 
 namespace ClientServer_Wcf_StandartAuth.Server {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
@@ -17,6 +10,6 @@ namespace ClientServer_Wcf_StandartAuth.Server {
             securedDataServer = dataServer;
         }
         public CustomWcfSecuredDataServer() : base(securedDataServer) { }
-        
+
     }
 }

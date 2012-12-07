@@ -1,0 +1,38 @@
+<div data-dx-role="view" data-dx-name="ContactEdit" data-dx-title="Contact">
+    <!--<div data-dx-role="command" data-bind="dxCommand: { action: handleSave, location: 'save', title: 'Save', icon: 'save' } "></div>
+    <div data-dx-role="command" data-bind="dxCommand: { action: '#_back', location: 'cancel', behavior: 'back', title: 'Cancel', icon: 'close' }"></div>-->
+        <div data-dx-target-placeholder="myheader">
+        <div data-bind="dxToolbar: { 
+            items: [
+                    { align: 'center', text: 'Contact' },
+                    { align: 'right', widget: 'button', options: { text: 'Save', click: handleSave, icon: 'save' } },
+                    { align: 'left', widget: 'button', options: { text: 'Cancel', click: '#_back', icon: 'close' } } 
+                ]
+            }">
+        </div>
+    </div>
+    <div data-dx-target-placeholder="content">
+        <div data-bind="dxScrollView: { }">
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">FirstName: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: contact.FirstName, placeholder: 'Enter firstname' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">LastName: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: contact.LastName, placeholder: 'Enter lastname' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Email: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: contact.Email, placeholder: 'Enter email' }"></div>
+                </div>
+                <div id="overlay" data-bind="dxOverlay: { }">
+                    <div data-bind="text: ErrorMessage"></div>
+                    <div id="hideButton" data-bind="dxButton: { text: 'Close', click: hideOverlay }"></div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>

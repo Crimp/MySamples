@@ -24,7 +24,7 @@ namespace XafWinClient.Win {
             SetupForWCFServer(winApplication);
         }
         private static void SetupForWCFServer(WinApplication winApplication) {
-            string connectionString = "http://minakovtttttest.cloudapp.net/CustomWcfSecuredDataServer.svc";
+            string connectionString = "http://samplexafsecurity.cloudapp.net/CustomWcfSecuredDataServer.svc";
             try {
                 EndpointAddress endpointAddress = new EndpointAddress(connectionString);
                 BasicHttpBinding bh = new BasicHttpBinding();

@@ -14,4 +14,10 @@ public class MyContext : XpoContext {
         //return base.ShowLargePropertyAsNamedStream(classType, propertyName);
         return false;
     }
+    public override bool HideProperty(Type classType, string propertyName) {
+        if(propertyName == "Oid") {
+            return true;
+        }
+        return base.HideProperty(classType, propertyName);
+    }
 }

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>1.7</ProductVersion>
-    <ProjectGuid>05fe049e-ab33-4424-a87f-17d20768fb5f</ProjectGuid>
+    <ProjectGuid>6cc92467-eb64-45e4-b3bf-8d3c4576713f</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CustomAuthenticationService.Azure</RootNamespace>
@@ -50,7 +50,7 @@
     <Folder Include="Profiles" />
   </ItemGroup>
   <ItemGroup>
-    <PublishProfile Include="Profiles\AzureAutXafTestSampleProduction.azurePubxml" />
+    <PublishProfile Include="Profiles\SampleXafSecurityProduction.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>

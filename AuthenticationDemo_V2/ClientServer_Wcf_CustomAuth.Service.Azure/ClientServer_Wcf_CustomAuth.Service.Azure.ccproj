@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>1.7</ProductVersion>
-    <ProjectGuid>593d1d74-7112-4fa1-a113-17dcd9c921ef</ProjectGuid>
+    <ProjectGuid>6e4427bb-f1b8-4caa-becb-11af3debffac</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ClientServer_Wcf_CustomAuth.Service.Azure</RootNamespace>
@@ -50,7 +50,7 @@
     <Folder Include="Profiles" />
   </ItemGroup>
   <ItemGroup>
-    <PublishProfile Include="Profiles\MinakovTTTTTestProduction.azurePubxml" />
+    <PublishProfile Include="Profiles\SampleXafSecurityProduction.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>

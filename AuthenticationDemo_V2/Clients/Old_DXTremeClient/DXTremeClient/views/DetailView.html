@@ -1,0 +1,36 @@
+﻿<div data-role="view" data-name="DetailView">
+    <div data-target-placeholder="header">
+        <div data-bind="dxToolbar: {}">
+            <div data-bind="dxToolbarItem: { align: 'left', type: 'button' }">
+                <div data-bind="dxButton: { type: 'back', text: 'Back', click: handleBackClick }"></div>
+            </div>
+            <div data-bind="dxToolbarItem: { align: 'right', type: 'button' }">
+                <div id="dxButtonEdit" data-bind="dxButton: { text: 'Edit', click: handleEditClick }, visible: CanEdit() || !UILevelSecurity()"></div>
+            </div>
+            <div data-bind="dxToolbarItem: { align: 'center', text: FirstName }"></div>
+        </div>
+    </div>
+    <div data-target-placeholder="content">
+        <div data-bind="dxScrollView: { }">
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-key">FirstName</div>
+                <div class="dx-field-value" data-bind="text: FirstName"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-key">LastName</div>
+                <div class="dx-field-value" data-bind="text: LastName"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-key">Email</div>
+                <div class="dx-field-value" data-bind="text: Email"></div>
+            </div>
+            <img data-bind="attr: { src: Photo }" width="200" height="200" />
+            <div class="dx-field" data-bind="visible: !CanEdit()">
+                <div class="dx-field-key">UI Level Security</div>
+                <div class="dx-field-value" data-bind="dxSwitch: { value: UILevelSecurity }"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -34,7 +34,8 @@ namespace CustomAuthenticationService {
             _dataServiceHelper = dataServiceHelper;
         }
         public static void InitializeService(DataServiceConfiguration config) {
-            config.SetEntitySetAccessRule("*", EntitySetRights.All);
+            //config.SetEntitySetAccessRule("*", EntitySetRights.All);
+            config.SetEntitySetAccessRule("Contact", EntitySetRights.All);
             config.SetServiceOperationAccessRule("IsGranted", ServiceOperationRights.AllRead);
             config.SetServiceOperationAccessRule("IsUserAllowed", ServiceOperationRights.AllRead);
             config.SetServiceOperationAccessRule("CanReadMembers", ServiceOperationRights.AllRead);

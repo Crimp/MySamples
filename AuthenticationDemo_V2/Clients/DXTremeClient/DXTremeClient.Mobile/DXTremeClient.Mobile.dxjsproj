@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c8c7e3f8-44e2-491c-a245-813a1cb1b281</ProjectGuid>
+    <AutoAssignPort>True</AutoAssignPort>
+    <RunInSimulator>True</RunInSimulator>
+    <ApplicationPage>app.html</ApplicationPage>
+    <Name>DXTremeClient.Mobile</Name>
+    <RootNamespace>DXTremeClient.Mobile</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.js" />
+    <Content Include="app.html" />
+    <Content Include="app.css" />
+    <Content Include="css\dxtreme.android.holo-dark-12.2.css" />
+    <Content Include="css\dxtreme.desktop.default-12.2.css" />
+    <Content Include="css\dxtreme.ios.default-12.2.css" />
+    <Content Include="css\dxtreme.win8.black-12.2.css" />
+    <Content Include="css\dxtreme.win8.white-12.2.css" />
+    <Content Include="css\dxtreme.win8.black.small-12.2.css" />
+    <Content Include="data\DataManipulationRight.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="dxtremeclient.config.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\NoImage.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="layouts\Navbar\NavbarLayout.css" />
+    <Content Include="layouts\Navbar\NavbarLayout.html" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.css" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.html" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.js" />
+    <Content Include="layouts\Empty\EmptyLayout.css" />
+    <Content Include="layouts\Empty\EmptyLayout.html" />
+    <Content Include="layouts\Empty\EmptyLayout.js" />
+    <Content Include="js\dxtreme.core-12.2.js" />
+    <Content Include="js\dxtreme.framework-12.2.js" />
+    <Content Include="js\dxtreme.widgets-12.2.js" />
+    <Content Include="js\dxtreme.viz-12.2.js" />
+    <Content Include="js\globalize.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\knockout-2.1.0.js" />
+    <Content Include="views\contact\contact-details.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contact\contact-details.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contact\contact-details.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contact\contact-edit.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contact\contact-edit.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contact\contact-edit.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contact\contact.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contact\contact.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contact\contact.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contact\LogOn.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contact\LogOn.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contact\LogOn.js">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="js\" />
+    <Folder Include="layouts\" />
+    <Folder Include="layouts\Empty\" />
+    <Folder Include="layouts\Navbar\" />
+    <Folder Include="layouts\SlideOut\" />
+    <Folder Include="images" />
+    <Folder Include="data" />
+    <Folder Include="views\" />
+    <Folder Include="views\contact\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DXTremeClient.Shared\DXTremeClient.Shared.dxjsproj">
+      <Name>DXTremeClient.Shared</Name>
+      <Project>fafc9cab-5321-44ce-878d-76d62aeddf01</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <Target Name="Build">
+    <!--
+    <Message Text="'$(MSBuildToolsPath)'"></Message>
+    -->
+    <Message Text="Build JSProject '$(MSBuildProjectFile)':" Importance="high">
+    </Message>
+    <Message Text="Copying refenecses to output dir..." Importance="high" />
+    <MSBuild Targets="Build" Projects="@(ProjectReference)" Properties="OutputPath=$([System.IO.Path]::GetFullPath('$(OutputPath)'))">
+    </MSBuild>
+    <Message Text="Copying files to output dir..." Importance="high" />
+    <Copy SourceFiles="@(Content)" DestinationFiles="@(Content->'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" />
+    <Message Text="Finished Build JSProject '$(MSBuildProjectFile)'." Importance="high">
+    </Message>
+  </Target>
+  <Target Name="CreateManifestResourceNames" Condition="'@(ResxWithNoCulture)@(ResxWithCulture)@(NonResxWithNoCulture)@(NonResxWithCulture)'!=''" />
+  <Target Name="Rebuild" DependsOnTargets="Clean;Build">
+  </Target>
+  <Target Name="Clean">
+    <!--
+    <Message Text="Cleaning Output files..." Importance="high" />
+    <Delete Files="@([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+    -->
+    <Message Text="Cleaning Output dir ($([System.IO.Path]::GetFullPath('$(OutputPath)')))..." Importance="high" />
+    <RemoveDir Directories="$([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+  </Target>
+</Project>

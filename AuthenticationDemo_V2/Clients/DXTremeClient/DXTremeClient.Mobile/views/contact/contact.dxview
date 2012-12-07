@@ -1,0 +1,24 @@
+
+<div data-dx-role="view" data-dx-name="Contact" data-dx-title="Contacts" data-dx-target-frame="navigation">
+    <!--<div data-dx-role="command" data-bind="dxCommand: { action: '#ContactEdit', location: 'create', title: 'Add', icon: 'plus' }"></div>-->
+    <div data-dx-target-placeholder="myheader">
+        <div data-bind="dxToolbar: { items: [
+                { align: 'center', text: 'Contacts' },
+                { align: 'right', widget: 'button', options: { title: 'Add', icon: 'plus', click: '#ContactEdit' } }
+            ] }">
+        </div>
+    </div>
+    <div data-dx-target-placeholder="content" >             
+        <div data-bind="dxList: { dataSource: dataSource, pullDown: true }">
+          <div data-dx-name="item" data-dx-role="template" data-bind="dxAction: '#ContactDetails/{oid}'">
+                <div class="contact-icon">
+                    <img data-bind="attr: { src: ($data.Photo) }" width="60" height="60" />
+                </div>
+                <div class="contact-info">
+                    <div class="contact-FirstName" data-bind="text: $data.FirstName"></div>
+                    <div class="contact-LastName" data-bind="text: $data.LastName"></div>
+                </div>
+          </div>                  
+        </div>
+    </div>
+</div>

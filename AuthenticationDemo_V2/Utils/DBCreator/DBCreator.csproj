@@ -112,18 +112,17 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\Images\John.png">
-      <Link>Images\John.png</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Images\Sam.png">
-      <Link>Images\Sam.png</Link>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Sam.jpg" />
+    <EmbeddedResource Include="Resources\John.jpg" />
     <Content Include="Azure_XAF_AuthenticationDemoDB.sql" />
     <EmbeddedResource Include="Properties\Resource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

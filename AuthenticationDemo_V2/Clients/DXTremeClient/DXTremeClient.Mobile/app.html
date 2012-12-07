@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DXTremeClient</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+
+    <!-- Framework -->
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="js/globalize.js"></script>
+
+    <script type="text/javascript" src="js/dxtreme.core-12.2.js"></script>
+    <script type="text/javascript" src="js/dxtreme.framework-12.2.js"></script>
+    <script type="text/javascript" src="js/dxtreme.widgets-12.2.js"></script>
+    <script type="text/javascript" src="js/dxtreme.viz-12.2.js"></script>
+
+    <!--
+    <script type="text/javascript" src="js/dxtreme.core-12.2.debug.js"></script>
+    <script type="text/javascript" src="js/dxtreme.framework-12.2.debug.js"></script>
+    <script type="text/javascript" src="js/dxtreme.widgets-12.2.debug.js"></script>
+    <script type="text/javascript" src="js/dxtreme.viz-12.2.debug.js"></script>
+-->
+
+    <link rel="stylesheet" type="text/css" href="css/dxtreme.ios.default-12.2.css" />
+    <link rel="stylesheet" type="text/css" href="css/dxtreme.android.holo-dark-12.2.css" />
+    <link rel="stylesheet" type="text/css" href="css/dxtreme.desktop.default-12.2.css" />
+    <link rel="stylesheet" type="text/css" href="css/dxtreme.win8.black-12.2.css" />
+    <!-- link rel="stylesheet" type="text/css" href="css/dxtreme.win8.white-12.2.css" / -->
+    <!-- link rel="stylesheet" type="text/css" href="css/dxtreme.win8.black.small-12.2.css" / -->
+
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <script type="text/javascript" src="dxtremeclient.shared.config.js"></script>
+    <script type="text/javascript" src="dxtremeclient.config.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="data/db.js"></script>
+    <script type="text/javascript" src="data/contact-view-model.js"></script>
+    <script type="text/javascript" src="data\DataManipulationRight.js"></script>
+    <!-- Layouts -->
+    <link rel="stylesheet" type="text/css" href="layouts/Navbar/NavbarLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Navbar/NavbarLayout.html" />
+
+    <!-- Views -->
+    <script type="text/javascript" src="views/contact/contact.js"></script>
+    <link rel="dx-template" type="text/html" href="views/contact/contact.dxview" />
+    <link rel="stylesheet" type="text/css" href="views/contact/contact.css" />
+    <script type="text/javascript" src="views/contact/contact-details.js"></script>
+    <link rel="dx-template" type="text/html" href="views/contact/contact-details.dxview" />
+    <link rel="stylesheet" type="text/css" href="views/contact/contact-details.css" />
+    <script type="text/javascript" src="views/contact/contact-edit.js"></script>
+    <link rel="dx-template" type="text/html" href="views/contact/contact-edit.dxview" />
+    <link rel="stylesheet" type="text/css" href="views/contact/contact-edit.css" />
+    <link rel="dx-template" type="text/html" href="views/about.html" />
+
+    <script>
+        $(function () {
+            DXTremeClient.app.navigate("LogOn/null");
+        });
+    </script>
+
+		<script type="text/javascript" src="views/contact/LogOn.js"></script>
+		<link rel="dx-template" type="text/html" href="views/contact/LogOn.dxview"/>
+		<link rel="stylesheet" type="text/css" href="views/contact/LogOn.css"/>
+
+</head>
+<body>
+    <div id="viewPort"></div>
+</body>
+</html>
