@@ -20,5 +20,5 @@ $(function() {
 
     DXTremeClient.app.router.register(":view/:id", { view: "Contact", id: undefined });
     DXTremeClient.app.router.register(":view/:id", { view: "About", id: undefined });
-    DXTremeClient.app.router.register("LogOn/:oid", { view: "LogOn", oid: undefined });
+    DXTremeClient.app.router.register("LogOn/:id", { view: "LogOn", oid: undefined });
 });

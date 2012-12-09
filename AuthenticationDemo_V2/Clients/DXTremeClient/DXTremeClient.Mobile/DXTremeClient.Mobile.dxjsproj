@@ -51,31 +51,31 @@
     <Content Include="js\globalize.js" />
     <Content Include="js\jquery-1.7.2.min.js" />
     <Content Include="js\knockout-2.1.0.js" />
-    <Content Include="views\contact\contact-details.css">
+    <Content Include="views\contact\contact-ListView.dxview">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="views\contact\contact-details.dxview">
+    <Content Include="views\contact\contact-DetailView.css">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="views\contact\contact-details.js">
+    <Content Include="views\contact\contact-DetailView.dxview">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="views\contact\contact-edit.css">
+    <Content Include="views\contact\contact-DetailView.js">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="views\contact\contact-edit.dxview">
+    <Content Include="views\contact\contact-EditView.css">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="views\contact\contact-edit.js">
+    <Content Include="views\contact\contact-EditView.dxview">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="views\contact\contact.css">
+    <Content Include="views\contact\contact-EditView.js">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="views\contact\contact.dxview">
+    <Content Include="views\contact\contact-ListView.css">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="views\contact\contact.js">
+    <Content Include="views\contact\contact-ListView.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="views\contact\LogOn.css">
