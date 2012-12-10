@@ -4,8 +4,8 @@ window.DXTremeClient = $.extend(true, window.DXTremeClient, {
     "config": {
         "endpoints": {
             "db": {
-                "local": "http://minakov-w8.corp.devexpress.com/CustomAuthenticationService/CustomAuthenticationDataService.svc",
-                "production": "http://minakov-w8.corp.devexpress.com/CustomAuthenticationService/CustomAuthenticationDataService.svc"
+                "local": "http://localhost:54002/CustomAuthenticationDataService.svc",
+                "production": "http://localhost:54002/CustomAuthenticationDataService.svc"
             }
         },
         "services": {

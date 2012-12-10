@@ -198,7 +198,6 @@
           <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>63829</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://minakov-w8.corp.devexpress.com/ClientServer_Wcf_CustomAuth.Service</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
