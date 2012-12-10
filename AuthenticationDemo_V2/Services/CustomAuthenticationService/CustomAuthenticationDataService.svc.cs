@@ -18,6 +18,7 @@ using System.Web;
 namespace CustomAuthenticationService {
     [JSONPSupportBehaviorAttribute]
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, MaxItemsInObjectGraph = System.Int32.MaxValue, ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class CustomAuthenticationDataService : XpoDataServiceV3, System.Data.Services.IRequestHandler {
         private DataServiceHelper _dataServiceHelper;
         public CustomAuthenticationDataService()

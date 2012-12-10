@@ -36,21 +36,6 @@ namespace CustomAuthenticationService {
             try {
                 //Calling Cross Domain WCF Service using Jquery
                 // http://www.devexpress.com/Support/Center/Issues/ViewIssue.aspx?issueid=KA18633
-                //HttpContext.Current.Response.AddHeader("Access-Control-Allow-Credentials", "true");
-                //if(HttpContext.Current.Request.Headers.AllKeys.Contains("Access-Control-Allow-Origin")) {
-                //    HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", HttpContext.Current.Request.Headers["Access-Control-Allow-Origin"]);
-                //}
-                //if(HttpContext.Current.Request.Headers.AllKeys.Contains("Origin")) {
-                //    HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", HttpContext.Current.Request.Headers["Origin"]);
-                //}
-                //if(HttpContext.Current.Request.HttpMethod == "OPTIONS") {
-                //    //These headers are handling the "pre-flight" OPTIONS call sent by the browser
-                //    HttpContext.Current.Response.AddHeader("Access-Control-Allow-Methods", "GET, POST, MERGE, PUT, PATCH, DELETE");
-                //    HttpContext.Current.Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Accept");
-                //    HttpContext.Current.Response.AddHeader("Access-Control-Max-Age", "1728000");
-                    
-                //    HttpContext.Current.Response.End();
-                //}
                 string origin = HttpContext.Current.Request.Headers["Origin"];
                 if(!string.IsNullOrEmpty(origin)) {
                     HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", origin);

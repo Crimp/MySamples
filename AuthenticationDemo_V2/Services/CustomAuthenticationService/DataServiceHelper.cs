@@ -82,7 +82,7 @@ namespace DataProvider {
         }
         public UnitOfWork CreateSession(DevExpress.Xpo.DB.AutoCreateOption autoCreateOption) {
             IDataStore store = XpoDefault.GetConnectionProvider(ConnectionString, autoCreateOption);
-            IDataLayer directDataLayer = new ThreadSafeDataLayer(_xPDictionary, store);
+            IDataLayer directDataLayer = new SimpleDataLayer(_xPDictionary, store);
             UnitOfWork directSession = new UnitOfWork(directDataLayer);
             return directSession;
         }
